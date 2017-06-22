@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace AirborneBuddy.Models
 {
-    public class Jumps
+    public class AirborneOperation
     {
         public int ID { get; set; }
         public string DropZone { get; set; }
@@ -13,7 +13,7 @@ namespace AirborneBuddy.Models
         public DateTime DateTime { get; set; }
         //better way to hold pay dates //break out?
         public string PayPeriodCovered { get; set; }
-        public virtual JumpType? JumpType { get; set; }
+        public virtual JumpType JumpType { get; set; }
         
 
     }

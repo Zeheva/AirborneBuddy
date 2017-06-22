@@ -18,7 +18,7 @@ namespace AirborneBuddy.Models
         public int? QualificationID { get; set; }
         public virtual Qualification Qualification { get; set; }
 
-        public virtual ICollection<Jumps> Jumps { get; set; }
+        public virtual ICollection<AirborneOperation> Jumps { get; set; }
 
 
     }
