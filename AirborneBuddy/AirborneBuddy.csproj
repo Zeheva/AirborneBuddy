@@ -209,6 +209,7 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\ParatrooperController.cs" />
     <Compile Include="DAL\AirborneBuddyContext.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -299,6 +300,11 @@
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
     <Content Include="Service References\Application Insights\ConnectedService.json" />
+    <Content Include="Views\Paratrooper\Create.cshtml" />
+    <Content Include="Views\Paratrooper\Delete.cshtml" />
+    <Content Include="Views\Paratrooper\Details.cshtml" />
+    <Content Include="Views\Paratrooper\Edit.cshtml" />
+    <Content Include="Views\Paratrooper\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
