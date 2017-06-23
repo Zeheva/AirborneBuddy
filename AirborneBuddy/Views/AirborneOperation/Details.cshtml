@@ -1,0 +1,58 @@
+﻿@model AirborneBuddy.Models.AirborneOperation
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>AirborneOperation</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.DropZone)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DropZone)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AircraftPlatform)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AircraftPlatform)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DateTime)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DateTime)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PayPeriodCovered)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PayPeriodCovered)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.JumpType)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.JumpType)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

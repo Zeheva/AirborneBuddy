@@ -6,10 +6,8 @@ namespace AirborneBuddy.DAL
 {
     public class AirborneBuddyContext : DbContext
     {
-        public AirborneBuddyContext()
-        {
-            //add : Base("AirborneBuddyContext") when i understand why
-        }
+        public AirborneBuddyContext() : base("AirborneBuddyContext")
+        {}
 
         public DbSet<AirborneOperation> AirborneOperations { get; set; }
         public DbSet<Organization> Organizations { get; set; }

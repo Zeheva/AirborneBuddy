@@ -49,6 +49,9 @@
       <HintPath>..\packages\Antlr.3.5.0.2\lib\Antlr3.Runtime.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="CsvHelper, Version=2.0.0.0, Culture=neutral, PublicKeyToken=8c4959082be5c823, processorArchitecture=MSIL">
+      <HintPath>..\packages\CsvHelper.2.16.3.0\lib\net45\CsvHelper.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.AI.Agent.Intercept, Version=2.0.7.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.ApplicationInsights.Agent.Intercept.2.0.7\lib\net45\Microsoft.AI.Agent.Intercept.dll</HintPath>
       <Private>True</Private>
@@ -207,10 +210,12 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\AirborneOperationController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\ParatrooperController.cs" />
     <Compile Include="DAL\AirborneBuddyContext.cs" />
+    <Compile Include="DAL\AirborneInitializer.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -305,6 +310,11 @@
     <Content Include="Views\Paratrooper\Details.cshtml" />
     <Content Include="Views\Paratrooper\Edit.cshtml" />
     <Content Include="Views\Paratrooper\Index.cshtml" />
+    <Content Include="Views\AirborneOperation\Create.cshtml" />
+    <Content Include="Views\AirborneOperation\Delete.cshtml" />
+    <Content Include="Views\AirborneOperation\Details.cshtml" />
+    <Content Include="Views\AirborneOperation\Edit.cshtml" />
+    <Content Include="Views\AirborneOperation\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
